@@ -1,0 +1,25 @@
+cout << "Welcome to the Simple Calculator!" << endl;
+cout << "Enter two numbers: ";
+cin >> num1 >> num2;
+cout << "Enter the operation (+, -, *, /): ";
+cin >> operation;
+
+switch (operation) {
+    case '+':
+        add(num1, num2);
+        break;
+    case '-':
+        subtract(num1, num2);
+        break;
+    case '*':
+        multiply(num1, num2);
+        break;
+    case '/':
+        divide(num1, num2);
+        break;
+    default:
+        cout << "Error: Invalid operation." << endl;
+}
+
+return 0;
+}
